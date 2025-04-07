@@ -22,10 +22,9 @@
   scrollbar-color:  #00b4d8 rgba(249, 239, 225, 0.5);
 } */
 
-
-#dark {
-  background-color: #074e6c;
-  color: aliceblue;
+*{
+  margin: 0;
+  padding: 0;
 }
 
 .scroll-to-top {
@@ -69,9 +68,4 @@
     padding: 0px;
   }
   
-}
-
-*{
-  margin: 0;
-  padding: 0;
 }
