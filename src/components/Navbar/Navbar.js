@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className={navScroll ? "navbar-main navbar-scroll" : "navbar-main"}>
       <ul>
         <li className="nav-item home-nav">
-          <Link to="/"> {/* Zamień FontAwesomeIcon na Link */}
+          <Link to="/">
             <FontAwesomeIcon icon={faHome} />
           </Link>
         </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <Link to="/rent">Wypożycz</Link>
         </li>
         <li className="nav-item">
-          <Link to="/gallery">Zwróć</Link>
+          <Link to="/return">Zwróć</Link>
         </li>
         <li className="nav-item">
           <Link to="/contact">Kontakt</Link>
