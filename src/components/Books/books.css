@@ -1,0 +1,48 @@
+.book-list {
+    height: 100vh;
+    color: #333;
+    padding-top: 60px;
+    background-image: url("../../img/backgroundBooks.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: scroll;
+    
+  }
+
+  .book-list h2 {
+   font-family: "Righteous", sans-serif;
+   text-shadow: 2px 2px 2px rgba(255, 228, 196, 0.5);
+   padding: 10px;
+   letter-spacing: 3px;
+   text-align: center;
+}
+  
+  .book-list table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color:#fff9ceb6;
+    
+  }
+  
+  .book-list th, .book-list td {
+    border: 1px solid #dddddd;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  .book-list th {
+    background-color: #fffdce;
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  @media (max-width: 767px) {
+  
+    .book-list td {
+
+    font-size: 0.8rem;
+    }
+}

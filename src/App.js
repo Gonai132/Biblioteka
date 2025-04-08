@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import NavbarMobile from './components/Navbar/NavbarMobile';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Books from './components/Books/Books';
@@ -9,10 +10,12 @@ import Return from './components/Return/Return';
 import Contact from './components/Contact/Contact';
 import './App.css';
 
+
 function App() {
   return (
     <Router>
       <Navbar />
+      <NavbarMobile/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

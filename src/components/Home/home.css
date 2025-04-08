@@ -5,9 +5,8 @@
 
 .home {
     color: #555;
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 247, 212, 0.35);
     position: relative;
-    font-family: Montserrat, sans-serif;
     overflow: hidden;
 }
 
@@ -17,7 +16,7 @@
     width: 100%;
     left: 0;
     top: 0;
-    background: url("../../img/home_image.jpeg") no-repeat center bottom/cover;
+    background: url("../../img/home_image.jpeg")no-repeat center bottom/cover;
     position: absolute;
     z-index: -1;
     transition: transform 7s linear; 
@@ -51,7 +50,7 @@
     color:#444;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 }
@@ -73,14 +72,28 @@
 }
 
 .home-button a {
-    font-size: 1.4rem;
+    font-family: "Righteous", sans-serif;
+    font-size: 1.3rem;
     display: block;
     height: 30px;
+    text-decoration: none;
+    color: #444;
 }
 
-.home-button:hover {
+.home-button:hover  {
     background-color: white;
+}
+
+.home-button:hover a {
     color: #b52c58;
+}
+.Typewriter__wrapper{
+    font-family: "Righteous", sans-serif;
+    text-align: center;
+}
+
+.Typewriter {
+    text-align: center;
 }
 
 h1.home-title {
@@ -91,6 +104,25 @@ h1.home-title {
     font-weight: bolder;
 }
 
+@media (max-width: 1240px) {
+
+    h1.home-title {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+    
+    .home-content {
+        width: 70%;
+    }
+
+    .home p {
+        margin-bottom: 50px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+
+}
 
 @media (max-width: 767px) {
     .home { 
@@ -98,14 +130,31 @@ h1.home-title {
     }
 
     h1.home-title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        font-size: 2.2rem;
+    }
+
+    .home-content {
+        width: 90%;
     }
 
     .home p {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .home-button {
+        width: 80%;
+    }
+
+    .home-button a {
+        font-size: 1.1rem;
+
     }
 
     .home:before {
         background-position: 58%;
     }
 }
+

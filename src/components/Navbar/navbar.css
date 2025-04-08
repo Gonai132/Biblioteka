@@ -39,6 +39,11 @@
     border: none;
 }
 
+.nav-item a svg {
+    height: 1.3em;
+    vertical-align: -5px;
+}
+
 .home-nav{
     flex-basis: 7%;
     text-align: center;
@@ -60,25 +65,34 @@
     text-decoration: none;
     color: inherit;
     height: 50px;
+    font-family: "Righteous", sans-serif;
+    /* font-family: "Russo One", sans-serif; */
+    font-weight: 600;
+    font-style: normal;
   }
+
 
 .nav-item a.active-nav {
     transition: 0.3s;
     color:#333;
   }
 
-@media (max-width: 767px) {
-    .navbar-main {
-        display: none;
-    }
 
-}
 
 @media (max-width: 1240px) {
     .nav-item{
         flex-basis: 14%;
         font-size: 14px;
         letter-spacing: 5px;
+    }
+
+    .home-nav {
+        flex-basis: 7%;
+    }
+
+    .nav-item a svg {
+        height: 1.6em;
+        vertical-align: -5px;
     }
 
     .gap {
@@ -93,8 +107,19 @@
         letter-spacing: 5px;
     }
 
+    .home-nav {
+        flex-basis: 10%;
+    }
+
     .gap {
         flex-basis: 0%;
     }
        
+}
+
+@media (max-width: 767px) {
+    .navbar-main {
+        display: none;
+    }
+
 }

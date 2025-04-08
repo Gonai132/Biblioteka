@@ -1,6 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import React, { useState } from 'react';
-import {Link} from 'react-scroll';
+import { Link } from "react-router-dom"; 
 import './home.css';
 
 function Home() {
@@ -21,8 +21,8 @@ function Home() {
         <span
           className='home-button col-xl-4 col-lg-4 col-mid-4 col-sm-6 col-8'
           onMouseEnter={() => setIsHovered(true)} 
-          onMouseLeave={() => setIsHovered(false)} 
-        ><Link to="about" spy={true} smooth={true} offset={-20} duration={100} activeClass="active-nav">Zobacz więcej</Link>
+          onMouseLeave={() => setIsHovered(false)}>
+        <Link to="/about" className='active-nav'>Zobacz więcej</Link>
         </span>
       </div>
       </div>
