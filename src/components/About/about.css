@@ -17,6 +17,11 @@ div.about {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s linear;
+}
+
+.about1:hover, .about3:hover {
+transform: scale(1.02);
 }
 
 .about1-image {
@@ -24,6 +29,7 @@ div.about {
     background-size: contain;
     height: 350px;
     width: 350px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about2 {
@@ -36,6 +42,7 @@ div.about {
     background-size: contain;
     height: 350px;
     width: 350px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .about2 h2 {

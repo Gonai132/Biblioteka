@@ -5,20 +5,9 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import "./navbar.css";
 
 const Navbar = () => {
-  const [navScroll, setNavScroll] = useState(false);
-
-  const onChangeNav = () => {
-    if (window.scrollY >= 50) {
-      setNavScroll(true);
-    } else {
-      setNavScroll(false);
-    }
-  };
-
-  window.addEventListener("scroll", onChangeNav);
 
   return (
-    <nav className={navScroll ? "navbar-main navbar-scroll" : "navbar-main"}>
+    <nav className="navbar-main">
       <ul>
         <li className="nav-item home-nav">
           <Link to="/">

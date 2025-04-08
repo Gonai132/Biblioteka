@@ -1,0 +1,24 @@
+    .rent-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: #333;
+    background-color: rgba(252, 241, 190, 0.35);
+    padding-top: 60px;
+    overflow: scroll;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .rent-content::before {
+        content:"";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: url("../../img/background3.jpeg") no-repeat center bottom/cover;
+        position: absolute;
+        z-index: -1;
+        transition: transform 7s linear; 
+        animation: scaleAnimation 10s infinite linear; 
+    }

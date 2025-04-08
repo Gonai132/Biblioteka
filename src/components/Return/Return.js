@@ -1,9 +1,8 @@
+import "../Return/return.css";
+
 function Return() {
     return (
-        <div>
-            <h1>Zwrot</h1>
-            <h1>Zwrot</h1>
-            <h1>Zwrot</h1>
+        <div className="return-content">
             <h1>Zwrot</h1>
         </div>
         )}

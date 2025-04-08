@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "../Books/books.css";
 
 const Books = () => {
@@ -24,13 +25,13 @@ const Books = () => {
       });
   }, []);
 
-  if (loading) return <p>Ładowanie książek...</p>;
-  if (error) return <p>❌ Błąd: {error}</p>;
+  if (loading) return <p className="loading">Ładowanie książek...</p>;
+  if (error) return <p className="loading">Błąd: {error}</p>;
 
   return (
     <div className="book-list">
-      <h2>📚 Lista książek dostępnych w bibliotece:</h2>
-      <table>
+      <motion.h2 initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>📚 Lista książek dostępnych w bibliotece:</motion.h2>
+      <motion.table initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
         <thead>
           <tr>
             <th>ID</th>
@@ -51,7 +52,7 @@ const Books = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </motion.table>
     </div>
   );
 };
