@@ -1,11 +1,13 @@
     .rent-content {
+    box-sizing: border-box;
     height: 100vh;
     width: 100%;
     display: flex;
     color: #333;
     background-color: rgba(252, 241, 190, 0.35);
     padding-top: 60px;
-    overflow: scroll;
+    overflow: hidden;
+    position: relative;
     align-items: center;
     justify-content: center;
     }
