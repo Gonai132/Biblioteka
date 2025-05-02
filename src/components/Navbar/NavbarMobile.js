@@ -37,7 +37,7 @@ const NavbarMobile = () => {
               <Link to="/books" onClick={closeNavbar}>Książki</Link>
             </li>
             <li className="nav-item">
-              <Link to="/rent" onClick={closeNavbar}>Wypożycz</Link>
+              <Link to="/edit" onClick={closeNavbar}>Edytor</Link>
             </li>
             <li className="nav-item">
               <Link to="/return" onClick={closeNavbar}>Zwróć</Link>

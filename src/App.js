@@ -6,11 +6,13 @@ import NavbarMobile from './components/Navbar/NavbarMobile';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Books from './components/Books/Books';
-import Rent from './components/Rent/Rent';
+import Edit from './components/Edit/Edit';
+import EditSelect from './components/Edit/EditSelect';
 import Return from './components/Return/Return';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
+
 
 
 function AppContent() {
@@ -24,7 +26,8 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/books" element={<Books />} />
-        <Route path="/rent" element={<Rent />} />
+        <Route path="/edit" element={<EditSelect />} />
+        <Route path="/books/edit/:id" element={<Edit />} />
         <Route path="/return" element={<Return />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

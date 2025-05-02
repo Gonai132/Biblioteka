@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to="/books">Książki</Link>
         </li>
         <li className="nav-item">
-          <Link to="/rent">Wypożycz</Link>
+          <Link to="/edit">Edytor</Link>
         </li>
         <li className="nav-item">
           <Link to="/return">Zwróć</Link>

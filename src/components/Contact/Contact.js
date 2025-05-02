@@ -9,7 +9,7 @@ function Contact() {
       };
 
     return (
-        <div className="container contact">
+        <div className="contact">
             <div className="contact-content">
                 <div className="contact1"></div>
                 <div className="contact2">

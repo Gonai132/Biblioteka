@@ -1,26 +1,53 @@
 .return-content {
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    color: #333;
-    background-color: rgba(252, 190, 222, 0.35);
-    padding-top: 60px;
-    overflow: hidden;
-    position: relative; 
-    align-items: center;
-    justify-content: center;
-    }
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #333;
+  background-color: rgba(252, 190, 222, 0.35);
+  padding-top: 100px;
+  overflow-y: scroll;
+  position: relative;
+}
 
-    .return-content::before {
-        content:"";
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        background: url("../../img/background2.jpeg") no-repeat center bottom/cover;
-        position: absolute;
-        z-index: -1;
-        transition: transform 7s linear; 
-        animation: scaleAnimation 10s infinite linear; 
-    }
+.return-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../img/background2.jpeg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+    transition: transform 7s linear;
+    animation: scaleAnimation 10s infinite linear;
+}
+
+.return-form {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    width: 70%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.return-content h2 {
+  font-family: "Righteous", sans-serif;
+  color: #333;
+  text-shadow: 2px 2px 2px rgba(255, 228, 196, 0.3);
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+  .return-form {
+    width: 95%;
+  }
+}

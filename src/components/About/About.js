@@ -3,7 +3,7 @@ import "../About/about.css"
 
 function About() {
     return (
-        <div className="container about">
+        <div className="about">
             <div className="about-content">
                 <div className="about1">
                     <motion.div className="about1-image" initial={{ opacity: 0, x: -500 }} animate={{ opacity: 1, x: 0 }} transition={{ duration:0.7 }}></motion.div>

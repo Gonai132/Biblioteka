@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../Books/books.css";
 
@@ -39,6 +40,8 @@ const Books = () => {
             <th>Autor</th>
             <th>Opis</th>
             <th>ISBN</th>
+            <th>Category</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -49,6 +52,13 @@ const Books = () => {
               <td>{book.author}</td>
               <td>{book.description}</td>
               <td>{book.isbn}</td>
+              <td>{book.category?.name}</td>
+              <td>
+                <div className="d-flex gap-2">
+                  <Link to={`/books/edit/${book.id}`} className="btn btn-secondary">Edytuj</Link>
+                  <Link to={`/books/delete/${book.id}`} className="btn btn-danger">Usuń</Link>
+                </div>
+              </td>
             </tr>
           ))}
         </tbody>
