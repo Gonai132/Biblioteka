@@ -31,7 +31,7 @@ function AppContent() {
         <Route path="/return" element={<Return />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {(location.pathname !== "/" && location.pathname !== "/books") && <Footer />}
+      {(location.pathname !== "/" && location.pathname !== "/books" && location.pathname !== "/return") && <Footer />}
     </>
   );
 }

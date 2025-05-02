@@ -30,6 +30,7 @@ transform: scale(1.02);
     height: 350px;
     width: 350px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .about2 {
@@ -43,6 +44,7 @@ transform: scale(1.02);
     height: 350px;
     width: 350px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .about2 h2 {

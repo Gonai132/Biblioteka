@@ -1,5 +1,110 @@
-div.contact {
+.contact {
+    box-sizing: border-box;
     height: 100vh;
     width: 100%;
     background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.contact-content {
+    width: 50%;
+    min-height: 100vh;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+.contact-img {
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-img img {
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+
+}
+
+
+.contact-img img:hover {
+    transform: scale(1.02);
+    }
+
+.labels {
+    display: flex;
+    gap: 50px;
+    }
+
+.label1 {
+    flex-basis: 50%;
+    }
+
+.labels input {
+    width: 100%;
+
+    }
+
+.label2 {
+    flex-basis: 50%;
+    }
+
+.contact-form label, .reason {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+  }
+
+  .reason-radio label {
+    text-transform: initial!important;
+    font-weight: 400;
+  }
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.contact-form .form-check-label {
+  font-weight: normal;
+}
+
+.contact-form input[type="submit"] {
+  display: block;
+  margin: 10px auto 0 auto;
+  text-transform: uppercase;
+  padding: 7px 50px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.contact-content h2 {
+    padding-top: 50px;
 }

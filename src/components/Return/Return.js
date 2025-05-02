@@ -118,8 +118,8 @@ function Return() {
             />
           </div>
 
-          <button type="submit" className="btn btn-primary">
-            Dodaj książkę
+          <button type="submit" className="btn btn-secondary mx-auto d-block">
+            Zwróć książkę
           </button>
 
           {error && <p className="text-danger mt-2">{error}</p>}

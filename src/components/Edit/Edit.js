@@ -71,7 +71,8 @@ function Edit() {
 
   return (
     <div className="edit-content">
-      <h1>Edytuj książkę</h1>
+      <div className="edit-detailed">
+      <h2 className="title-style">Edytuj książkę</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label">Tytuł:</label>
@@ -135,10 +136,11 @@ function Edit() {
           </select>
         </div>
 
-        <button type="submit" className="btn btn-primary mt-3">
+        <button type="submit" className="btn btn-danger mt-3 mx-auto d-block">
           Zapisz zmiany
         </button>
       </form>
+      </div>
     </div>
   );
 }

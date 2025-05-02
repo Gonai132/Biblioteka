@@ -81,3 +81,12 @@
   background-color: #9c3153;
   border-color: #9c3153;
 }
+
+.btn:disabled {
+  background-color: #b52c58;
+  border-color: #b52c58;
+}
+
+.btn {
+  font-family: "Righteous", sans-serif;
+}

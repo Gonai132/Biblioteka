@@ -35,9 +35,10 @@ function EditSelect() {
 
   return (
     <div className="edit-content">
-      <h1>Wybierz książkę do edycji</h1>
+      <div className="select-content">
+      <h2 className="title-style">Wybierz książkę do edycji:</h2>
       <select className="form-select mt-3" onChange={handleSelectChange} value={selectedBookId}>
-        <option value="">-- Wybierz książkę --</option>
+        <option value="">-- Wybierz książkę z listy --</option>
         {books.map((book) => (
           <option key={book.id} value={book.id}>
             {book.title} - {book.author}
@@ -46,12 +47,13 @@ function EditSelect() {
       </select>
 
       <button
-        className="btn btn-primary mt-3"
+        className="btn btn-danger mt-3"
         onClick={handleEdit}
         disabled={!selectedBookId}
       >
-        Edytuj wybraną książkę
+        Edytuj tę książkę
       </button>
+      </div>
     </div>
   );
 }

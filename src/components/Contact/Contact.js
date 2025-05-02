@@ -1,5 +1,6 @@
 import "../Contact/contact.css";
 import { motion } from "framer-motion";
+import biblioImage from "../../img/biblio2.jpeg";
 
 function Contact() {
     
@@ -14,29 +15,32 @@ function Contact() {
                 <div className="contact1"></div>
                 <div className="contact2">
                     <motion.div className="contact-form"  initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-                    <h2>Skontaktuj sie z nami</h2>
+                    <h2 className="title-style">Skontaktuj sie z nami</h2>
                     <p>Jeśli tylko masz jakiekolwiek pytania odnośnie funkcjonowania biblioteki - śmiało napisz do nas, a my z przyjemnością udzielimy Ci odpowiedzi.</p>
                     <form onSubmit={handleSubmit}>
-                        <label htmlFor="name">Imię: </label><br />
-                        <input type="text" name="name" id="name" /><br />
-                        <label htmlFor="email">Twój email: </label><br />
-                        <input type="text" name="email" id="email"/><br />
+                        <div className="labels">
+                        <div className="label1">
+                            <label className="form-label" htmlFor="name">Imię: </label><br />
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div className="label2">
+                            <label htmlFor="email">Twój email: </label><br />
+                            <input type="text" name="email" id="email"/>
+                        </div>
+                        </div>
                         <label htmlFor="message">Twoja wiadomość: </label><br />
-                        <textarea name="message" id="message" rows="4" cols="30" /><br />
-                        <p>Wybierz główny powód wiadomości: </p>
-                        <input type="radio" id="one" name="subject" value="One" />
-                        <label htmlFor="one">Zapytanie o książki, np. dostępność</label><br />
+                        <textarea name="message" id="message" rows="2" cols="30" /><br />
+                        <p className="reason">Wybierz główny powód wiadomości: </p>
+                        <div className="reason-radio">
+                            <input type="radio" id="one" name="subject" value="One" />
+                            <label htmlFor="one">Zapytanie o książki, np. dostępność</label><br />
 
-                        <input type="radio" id="two" name="subject" value="Two" />
-                        <label htmlFor="two">Funkcjonowanie portalu biblioteki</label><br />
+                            <input type="radio" id="two" name="subject" value="Two" />
+                            <label htmlFor="two">Funkcjonowanie portalu biblioteki</label><br />
 
-                        <input type="radio" id="three" name="subject" value="Three" />
-                        <label htmlFor="three">Inny temat</label><br /><br />
-
-                        <p>Wyrażam zgody marketingowe i chcę dołączyć do newslettera</p>
-                        <input type="checkbox" id="val1" name="val1" value="Val1" />
-                        <label htmlFor="val1">tak</label><br />
-                        <br />
+                            <input type="radio" id="three" name="subject" value="Three" />
+                            <label htmlFor="three">Inny temat</label><br />
+                        </div>
                         <label htmlFor="country">Wybierz kraj, w którym mieszkasz z listy:</label><br />
                         <select name="country" id="country">
                             <option value="pl">Polska</option>
@@ -49,11 +53,14 @@ function Contact() {
                             <option value="us">USA</option>
                         </select><br />
                         <br />
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Wyślij wiadomość" className="btn btn-danger"/>
                     </form>
                 </motion.div>
                 </div>
                 <div className="contact3"></div>
+            </div>
+            <div className="contact-img">
+            <img src={biblioImage} alt="Biblioteka" className="mx-auto d-block"/>
             </div>
         </div>
     )}

@@ -58,17 +58,17 @@
 .home-button {
     width: 40%;
     line-height: 32px;
-    background-color: rgba(255, 242, 196, 0.9);
-    color:#444;
+    /* background-color: rgba(255, 242, 196, 0.9); */
+    background-color: #b52c57e2;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding: 10px;
-    border-radius: 30px;
-    font-weight: bold;
+    padding: 7px;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
     transition-duration: 0.3s;
+    border: 1px solid #b52c57e2;
 }
 
 .home-button a {
@@ -77,7 +77,7 @@
     display: block;
     height: 30px;
     text-decoration: none;
-    color: #444;
+    color: #e7e7e7;
 }
 
 .home-button:hover  {

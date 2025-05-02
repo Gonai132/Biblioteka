@@ -1,26 +1,76 @@
-    .edit-content {
+.edit-content {
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     color: #333;
     background-color: rgba(252, 241, 190, 0.35);
-    padding-top: 60px;
     overflow: hidden;
     position: relative;
     align-items: center;
     justify-content: center;
     }
 
-    .edit-content::before {
-        content:"";
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        background: url("../../img/background3.jpeg") no-repeat center bottom/cover;
-        position: absolute;
-        z-index: -1;
-        transition: transform 7s linear; 
-        animation: scaleAnimation 10s infinite linear; 
+.edit-content::before {
+    content:"";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: url("../../img/background3.jpeg") no-repeat center bottom/cover;
+    position: absolute;
+    z-index: -1;
+    transition: transform 7s linear;
+    animation: scaleAnimation 10s infinite linear;
     }
+
+
+.select-content {
+    text-align: center;
+    }
+    
+.edit-detailed {
+    padding: 60px 20px;
+    width: 40%;
+    max-width: 700px;
+    min-width: 380px;
+    overflow-y: scroll;
+
+}
+
+.edit-content input, .edit-content select, .edit-content textarea {
+   background-color: rgba(255, 255, 255, 0.8)!important;
+}
+
+.edit-content label {
+    margin: 0px;
+    padding: 5px 0 3px;
+}
+
+.mb-3 {
+    margin-bottom: 5px!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: medium;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(203, 198, 192, 0.5);
+}
+
+
+.edit-content .btn {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 7px 30px!important;
+    margin-top: 30px!important;
+}
+
+@media (max-width: 768px) {
+    .select-content {
+        width: 90%;
+    }
+  
+    .edit-content h2 {
+      font-size: 1.3rem;
+    }
+  }
