@@ -12,12 +12,19 @@
 .mobile-view-header p{
     color: rgb(255, 255, 255);
     opacity: 0.9;
-    display: block;
+    display: inline-block;
     padding-left: 10px;
     padding-top: 10px;
     cursor: pointer;
     width: 50px;
     transition: 0.3s;
+}
+
+.mobile-view-header img {
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    top: 8px;
 }
 
 .mobile-nav.nav-item a {

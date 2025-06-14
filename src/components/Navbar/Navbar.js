@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import "./navbar.css";
+import LogoImg from "../../img/logoB.png";
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faHome} />
           </Link>
         </li>
-        <li className="nav-item gap"> </li>
+        <li className="nav-item gap">  <img src={LogoImg} alt="Biblioteka logo" height={40}/> </li>
         <li className="nav-item">
           <Link to="/about">O nas</Link>
         </li>

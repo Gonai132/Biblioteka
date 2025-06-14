@@ -16,7 +16,6 @@ function Contact() {
                 <div className="contact2">
                     <motion.div className="contact-form"  initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                     <h2 className="title-style">Skontaktuj sie z nami</h2>
-                    <p>Jeśli tylko masz jakiekolwiek pytania odnośnie funkcjonowania biblioteki - śmiało napisz do nas, a my z przyjemnością udzielimy Ci odpowiedzi.</p>
                     <form onSubmit={handleSubmit}>
                         <div className="labels">
                         <div className="label1">

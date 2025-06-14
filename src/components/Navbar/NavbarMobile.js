@@ -5,6 +5,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import "./navbar.css";
 import "./navbarmobile.css";
+import LogoImg from "../../img/logoB.png";
 
 const NavbarMobile = () => {
   const [open, setOpen] = useState(false);
@@ -21,6 +22,7 @@ const NavbarMobile = () => {
     <div className='responsive-mobile-view'>
       <div className='container-fluid mobile-view-header'>
         <p onClick={handleNavbar}><GiHamburgerMenu size={30} /></p>
+        <img src={LogoImg} alt="Biblioteka logo" height={35}/>
       </div>
       {open && (
         <div className='mobile-nav'>

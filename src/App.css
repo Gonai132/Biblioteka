@@ -87,6 +87,10 @@
   border-color: #b52c58;
 }
 
+.btn:active {
+  background-color: #421121!important;
+} 
+
 .btn {
   font-family: "Righteous", sans-serif;
 }
