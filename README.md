@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+🇵🇱 Polski
+Studencka aplikacja do zarządzania biblioteką (React + Spring Boot)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To projekt studencki zrealizowany w ramach zajęć na uczelni.
+Aplikacja umożliwia przeglądanie książek, ich zwracanie oraz wysyłanie wiadomości kontaktowych do zespołu biblioteki.
 
-## Available Scripts
+Użyte technologie:
+Front-end: React.js, Bootstrap 5, Framer Motion
 
-In the project directory, you can run:
+Back-end: Spring Boot (Java), REST API
 
-### `npm start`
+Baza danych: MySQL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Narzędzia: Visual Studio Code, IntelliJ IDEA, Postman, phpMyAdmin
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+▶️ Jak uruchomić projekt lokalnie
+Wymagania:
+Node.js i npm
 
-### `npm test`
+Java 17+ oraz Maven
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+MySQL lub MariaDB
 
-### `npm run build`
+IDE (np. VS Code dla frontendu, IntelliJ dla backendu)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Back-end (Spring Boot):
+Sklonuj projekt i otwórz folder backendu w IntelliJ.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Upewnij się, że MySQL działa i baza danych została utworzona (np. library_db).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Skonfiguruj application.properties lub application.yml z danymi do logowania do bazy.
 
-### `npm run eject`
+Uruchom aplikację przez klasę DemoApplication.java.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+API będzie dostępne pod adresem http://localhost:8081/api.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Front-end (React):
+Otwórz folder aplikacji React w VS Code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Wpisz npm install, aby zainstalować zależności.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Uruchom serwer deweloperski poleceniem npm start.
 
-## Learn More
+Aplikacja powinna działać pod http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Testowanie:
+Użyj Postmana lub otwórz /api/books, /api/contact itd. w przeglądarce lub z poziomu frontendu.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+English
+Student Library Management App (React + Spring Boot)
+This is a student project built as part of a web development course.
+It is a simple library management system where users can browse books, return them, and send contact messages to the library team.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Technologies used:
+Front-end: React.js, Bootstrap 5, Framer Motion
 
-### Analyzing the Bundle Size
+Back-end: Spring Boot (Java), REST API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Database: MySQL
 
-### Making a Progressive Web App
+Tools: Visual Studio Code, IntelliJ IDEA, Postman, phpMyAdmin
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+▶️ How to run the project locally
+Requirements:
+Node.js and npm
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Java 17+ and Maven
 
-### Deployment
+MySQL or MariaDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+IDEs (e.g., VS Code for frontend, IntelliJ for backend)
 
-### `npm run build` fails to minify
+Back-end (Spring Boot):
+Clone the project and open the back-end folder in IntelliJ.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Make sure MySQL is running and the database is created (e.g., library_db).
+
+Configure application.properties or application.yml with your DB credentials.
+
+Run the application with DemoApplication.java.
+
+The API will be available at http://localhost:8081/api.
+
+Front-end (React):
+Open the React app folder in VS Code.
+
+Run npm install to install dependencies.
+
+Start the development server with npm start.
+
+The app should run at http://localhost:3000.
+
+Test endpoints:
+Use Postman or open /api/books, /api/contact, etc., in the browser or frontend.
+
