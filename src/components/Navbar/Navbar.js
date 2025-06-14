@@ -15,7 +15,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faHome} />
           </Link>
         </li>
-        <li className="nav-item gap">  <img src={LogoImg} alt="Biblioteka logo" height={40}/> </li>
+        <li className="nav-item gap"> <Link to="/books"> <img src={LogoImg} alt="Biblioteka logo" height={40}/> </Link></li>
         <li className="nav-item">
           <Link to="/about">O nas</Link>
         </li>

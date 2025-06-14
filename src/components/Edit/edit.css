@@ -68,6 +68,7 @@
 @media (max-width: 768px) {
     .select-content {
         width: 90%;
+        margin: auto;
     }
   
     .edit-content h2 {

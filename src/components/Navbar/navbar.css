@@ -44,6 +44,10 @@
     vertical-align: -5px;
 }
 
+.nav-item img {
+    cursor: pointer;
+}
+
 .home-nav{
     flex-basis: 7%;
     text-align: center;

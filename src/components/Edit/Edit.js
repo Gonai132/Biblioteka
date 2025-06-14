@@ -55,14 +55,18 @@ function Edit() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     fetch(`http://localhost:8081/api/books/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(book),
     })
       .then((res) => res.json())
-      .then(() => navigate("/books"))
+      .then((data) => {
+        navigate("/books", {
+          state: { message: `Książka "${data.title}" została edytowana!` },
+        });
+      })
       .catch((err) => setError(err.message));
   };
 

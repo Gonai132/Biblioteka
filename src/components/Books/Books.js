@@ -2,11 +2,22 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "../Books/books.css";
+import { useLocation } from "react-router-dom";
 
 const Books = () => {
+  const location = useLocation();
+  const [flashMessage, setFlashMessage] = useState(location.state?.message || null);
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+  if (flashMessage) {
+    const timer = setTimeout(() => setFlashMessage(null), 4000);
+    return () => clearTimeout(timer);
+  }
+}, [flashMessage]);
 
   useEffect(() => {
     fetch("http://localhost:8081/api/books")
@@ -25,6 +36,27 @@ const Books = () => {
         setLoading(false);
       });
   }, []);
+
+  const handleDelete = (id, title) => {
+    const confirmDelete = window.confirm(`Czy na pewno chcesz usunąć książkę: "${title}"?`);
+  
+    if (!confirmDelete) return;
+  
+    fetch(`http://localhost:8081/api/books/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Nie udało się usunąć książki");
+        }
+        setBooks((prevBooks) => prevBooks.filter((book) => book.id !== id));
+        setMessage(`Książka "${title}" została usunięta z listy.`);
+        setTimeout(() => setMessage(null), 5000);
+      })
+      .catch((err) => {
+        alert("Wystąpił błąd podczas usuwania książki: " + err.message);
+      });
+    };
 
   if (loading) return <p className="loading">Ładowanie książek...</p>;
   if (error) return <p className="loading">Błąd: {error}</p>;
@@ -56,13 +88,15 @@ const Books = () => {
               <td>
                 <div className="d-flex gap-2">
                   <Link to={`/books/edit/${book.id}`} className="btn btn-secondary">Edytuj</Link>
-                  <Link to={`/books/delete/${book.id}`} className="btn btn-danger">Usuń</Link>
+                  <button className="btn btn-danger" onClick={() => handleDelete(book.id, book.title)}>Usuń</button>
                 </div>
               </td>
             </tr>
           ))}
         </tbody>
       </motion.table>
+      {flashMessage && (<div className="alert popup text-center" role="alert">{flashMessage}</div>)}
+      {message && ( <div className="alert popup text-center" role="alert">{message}</div>)}
     </div>
   );
 };

@@ -108,3 +108,55 @@
 .contact-content h2 {
     padding-top: 50px;
 }
+
+
+@media (max-width: 639px) {
+
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-bottom: 100px;
+  }
+
+  .contact-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    padding-top: 50px;
+}
+
+.contact-img {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+
+@media (min-width: 640px) and (max-width: 1024px) {
+
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-bottom: 200px;
+  }
+
+  .contact-content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    padding-top: 50px;
+}
+
+.contact-img {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+

@@ -22,7 +22,7 @@ const NavbarMobile = () => {
     <div className='responsive-mobile-view'>
       <div className='container-fluid mobile-view-header'>
         <p onClick={handleNavbar}><GiHamburgerMenu size={30} /></p>
-        <img src={LogoImg} alt="Biblioteka logo" height={35}/>
+        <Link to="/books"><img src={LogoImg} alt="Biblioteka logo" height={35}/></Link>
       </div>
       {open && (
         <div className='mobile-nav'>

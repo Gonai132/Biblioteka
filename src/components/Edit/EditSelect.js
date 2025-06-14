@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./edit.css";
 
 function EditSelect() {
@@ -35,6 +36,7 @@ function EditSelect() {
 
   return (
     <div className="edit-content">
+      <motion.div className="contact-form"  initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
       <div className="select-content">
       <h2 className="title-style">Wybierz książkę do edycji:</h2>
       <select className="form-select mt-3" onChange={handleSelectChange} value={selectedBookId}>
@@ -53,7 +55,7 @@ function EditSelect() {
       >
         Edytuj tę książkę
       </button>
-      </div>
+      </div></motion.div>
     </div>
   );
 }
