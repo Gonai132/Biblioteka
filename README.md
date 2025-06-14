@@ -1,4 +1,4 @@
-🇵🇱 Polski
+Polski
 Studencka aplikacja do zarządzania biblioteką (React + Spring Boot)
 
 To projekt studencki zrealizowany w ramach zajęć na uczelni.
@@ -32,7 +32,7 @@ Skonfiguruj application.properties lub application.yml z danymi do logowania do 
 
 Uruchom aplikację przez klasę DemoApplication.java.
 
-API będzie dostępne pod adresem http://localhost:8081/api.
+API będzie dostępne pod adresem http://localhost:8081/api/books.
 
 Front-end (React):
 Otwórz folder aplikacji React w VS Code.
@@ -81,7 +81,7 @@ Configure application.properties or application.yml with your DB credentials.
 
 Run the application with DemoApplication.java.
 
-The API will be available at http://localhost:8081/api.
+The API will be available at http://localhost:8081/api/books.
 
 Front-end (React):
 Open the React app folder in VS Code.
