@@ -1,5 +1,5 @@
-Polski
-Studencka aplikacja do zarządzania biblioteką (React + Spring Boot)
+Polski:
+Aplikacja do zarządzania biblioteką (React + Spring Boot)
 
 To projekt studencki zrealizowany w ramach zajęć na uczelni.
 Aplikacja umożliwia przeglądanie książek, ich zwracanie oraz wysyłanie wiadomości kontaktowych do zespołu biblioteki.
